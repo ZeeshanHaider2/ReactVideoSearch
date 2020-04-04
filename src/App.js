@@ -9,9 +9,6 @@ const KEY = "AIzaSyAp9gJnxFuGBDs7hg1cIFSpoM5ZAtvTiro";
 class App extends React.Component {
   state = { videos: [], selectedVideo: null };
 
-  componentDidMount() {
-    this.onTermSubmit("billy jeans");
-  }
   onTermSubmit = async (term) => {
     const response = await youtube.get("/search", {
       params: {
