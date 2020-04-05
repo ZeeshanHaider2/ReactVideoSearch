@@ -9,6 +9,9 @@ const KEY = "AIzaSyAp9gJnxFuGBDs7hg1cIFSpoM5ZAtvTiro";
 class App extends React.Component {
   state = { videos: [], selectedVideo: null };
 
+  componentDidMount() {
+    this.onTermSubmit("Animals");
+  }
   onTermSubmit = async (term) => {
     const response = await youtube.get("/search", {
       params: {
@@ -16,7 +19,7 @@ class App extends React.Component {
         part: "snippet",
         type: "video",
         maxResults: 5,
-        key: `${KEY}`,
+        key: KEY,
       },
     });
     this.setState({
