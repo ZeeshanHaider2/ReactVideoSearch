@@ -1,3 +1,9 @@
+## Preview:  https://react-app-video-search.herokuapp.com/
+
+Detail: Video Search App created by using create-react-app and deployed on Heroku.
+Sementic UI framework used to create responsive layout.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
